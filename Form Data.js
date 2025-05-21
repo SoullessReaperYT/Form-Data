@@ -6,7 +6,6 @@ import {
     FormCancelationReason, // ✅ Helps us understand why a form was closed (like if the player was busy)
     MessageFormData,       // ✅ Used to show a 2-button popup with a message — like a Yes/No choice
     ModalFormData,         // ✅ Allows us to create more advanced forms with text inputs, sliders, dropdowns, and toggles
-    uiManager              // ⚙️ Advanced form controller (not used in this code, but imported for future use)
 } from "@minecraft/server-ui"; // 📂 This is where all the UI tools come from
 
 import {
