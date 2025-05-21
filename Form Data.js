@@ -62,6 +62,8 @@ world.beforeEvents.chatSend.subscribe((data) => {
 /**
  * 📄 ModalForm: This creates a form with different input types (text, dropdown, slider, toggle)
  * 🎙️ "This is the most powerful form — you can collect multiple types of input at once."
+ * @param {Player} player
+ * @returns {void}
  */
 function ModalForm(player) {
     new ModalFormData() // 🛠️ Start building a modal form
@@ -90,6 +92,8 @@ function ModalForm(player) {
 /**
  * 📨 MessageForm: A simple 2-button confirmation popup
  * 🎙️ "This is perfect for Yes/No or two-choice questions."
+ * @param {Player} player
+ * @returns {void}
  */
 function MessageForm(player) {
     new MessageFormData()
@@ -116,6 +120,8 @@ function MessageForm(player) {
 /**
  * 🧭 ShowMenu: Main action menu with 2 options
  * 🎙️ "This is the main screen players will see — made using ActionFormData, which shows simple buttons."
+ * @param {Player} player
+ * @returns {void}
  */
 function ShowMenu(player) {
     new ActionFormData()
@@ -142,6 +148,8 @@ function ShowMenu(player) {
 /**
  * 🚀 warpMenu: Teleport menu with 3 buttons
  * 🎙️ "This lets players choose where to teleport — a fixed location, random coordinates, or back."
+ * @param {Player} player
+ * @returns {void}
  */
 function warpMenu(player) {
     new ActionFormData()
