@@ -80,7 +80,7 @@ function ModalForm(player) {
             if (data.canceled) return; // ❌ Player closed the form manually
 
             // 🧩 Get all the form values in one array
-            const [textInput, dropdownIndex, amount, confirm] = data.formValues;
+            const [textInput, dropdownIndex, amount, confirm] = /** @type {[string, number, number, boolean]} */ (data.formValues);
 
             // 📣 Send all inputs back to player as a chat message
             player.sendMessage(
